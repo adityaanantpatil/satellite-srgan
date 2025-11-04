@@ -1,0 +1,15 @@
+﻿# Ignore Python cache and temp files
+__pycache__/
+*.pyc
+*.log
+*.tmp
+*.pt
+*.DS_Store
+
+# Ignore large data or checkpoints except the tracked ones
+data/raw/
+!data/raw/UCMerced_LandUse.zip
+
+checkpoints/
+!checkpoints/srgan/
+!checkpoints/srgan/*.pth
