@@ -1,0 +1,64 @@
+{
+    "model": {
+        "num_residual_blocks": 16,
+        "num_channels": 64,
+        "upscale_factor": 4,
+        "lr_size": 64,
+        "hr_size": 256
+    },
+    "training": {
+        "batch_size": 16,
+        "num_epochs": 100,
+        "generator_lr": 0.0001,
+        "discriminator_lr": 0.0001,
+        "lr_decay_step": 50,
+        "lr_decay_gamma": 0.1,
+        "content_weight": 1.0,
+        "perceptual_weight": 0.006,
+        "adversarial_weight": 0.001,
+        "disc_update_freq": 1
+    },
+    "data": {
+        "train_split": 0.7,
+        "val_split": 0.15,
+        "test_split": 0.15,
+        "augmentation": {
+            "horizontal_flip": true,
+            "vertical_flip": true,
+            "rotation": true,
+            "rotation_angles": [
+                0,
+                90,
+                180,
+                270
+            ],
+            "color_jitter": true,
+            "brightness": 0.2,
+            "contrast": 0.2,
+            "saturation": 0.2,
+            "hue": 0.1
+        },
+        "normalize_mean": [
+            0.485,
+            0.456,
+            0.406
+        ],
+        "normalize_std": [
+            0.229,
+            0.224,
+            0.225
+        ]
+    },
+    "hardware": {
+        "device": "cuda",
+        "num_workers": 4,
+        "pin_memory": true,
+        "use_amp": true
+    },
+    "logging": {
+        "log_interval": 10,
+        "save_checkpoint_every": 10,
+        "validate_every": 1,
+        "save_samples_every": 5
+    }
+}

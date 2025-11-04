@@ -1,0 +1,23 @@
+==========================================================================================
+IMPROVEMENTS OVER BASELINE (BICUBIC)
+==========================================================================================
+
+SRCNN vs Bicubic:
+  PSNR Improvement:  +-0.10 dB  (-0.3%)
+  SSIM Improvement:  +0.0099  (+1.2%)
+  Min PSNR: 19.87 dB
+  Max PSNR: 41.16 dB
+
+SRGAN vs Bicubic:
+  PSNR Improvement:  +-0.36 dB  (-1.1%)
+  SSIM Improvement:  +0.0142  (+1.8%)
+  Min PSNR: 20.53 dB
+  Max PSNR: 40.53 dB
+
+SRGAN vs SRCNN:
+  PSNR Difference:   -0.26 dB
+  SSIM Difference:   +0.0043
+  Note: Lower PSNR is expected for GAN-based methods
+        SRGAN prioritizes perceptual quality over pixel-wise accuracy
+
+==========================================================================================

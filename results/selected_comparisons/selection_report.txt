@@ -1,0 +1,34 @@
+======================================================================
+IMAGE SELECTION REPORT
+======================================================================
+
+Total images analyzed: 20
+Best images selected: 5
+Worst images selected: 2
+Median images selected: 3
+Showcase collection: 5
+
+USAGE RECOMMENDATIONS:
+----------------------------------------------------------------------
+• BEST images: Use for LinkedIn, presentations, portfolio
+• MEDIAN images: Representative samples for technical reports
+• WORST images: Analyze failure cases, identify improvements
+• SHOWCASE collection: Quick overview for README/papers
+
+BEST IMAGES (Highest Quality):
+  1. comparison_001.png
+  2. comparison_002.png
+  3. comparison_003.png
+  4. comparison_004.png
+  5. comparison_005.png
+
+MEDIAN IMAGES (Representative):
+  1. comparison_010.png
+  2. comparison_011.png
+  3. comparison_012.png
+
+WORST IMAGES (For Analysis):
+  1. comparison_019.png
+  2. comparison_020.png
+
+======================================================================
